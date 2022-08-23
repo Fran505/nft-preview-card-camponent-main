@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'outfit', sans-serif;
+
+}
+
+.container {
+    position: relative;
+    width: 350px;
+    height: 610px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px ;
+    font-size: 18px;
+    border-radius: 1rem;
+    background-color: hsl(216, 50%, 16%);
+}
+
+/* This is the image, I want to make looks like in "active.states.jpg" but if I use a background color the image is over it.  */
+
+.card__image {
+    display: block;
+    width: 350px;
+    height: 350px;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+/* This is the "eye" icon. I used display:none and then my plan was use Hover to watch it again but it did not work.  */
+
+.icon__view {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    display: none;
+}
+
+
+.card {
+    margin: 0 1.5rem;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.card__title:hover {
+    color: hsl(178, 100%, 50%) ;
+}
+
+.card__text {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.card__text--green {
+    display: inline-block;
+    font-weight: 400;
+    color: hsl(178, 100%, 50%) ;
+}
+
+.card__text--time {
+    float: right;
+    font-weight: 400;
+}
+
+.card__separator {
+    border-color: hsl(215, 51%, 70%);
+}
+
+.card__user{
+    padding: 0.5rem;
+}
+
+.user__img {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.card__text--bottom {
+    position: absolute;
+    font-size: 16px;
+    bottom: 15px;
+    right: 90px;
+    }
+
+.card__text--bold {
+    font-weight: 600;
+    color: white;
+}
+
+.card__text--bold:hover {
+    color: hsl(178, 100%, 50%) ;
+}
+
+
