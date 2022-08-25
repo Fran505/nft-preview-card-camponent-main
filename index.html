@@ -8,8 +8,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 
   <title>Frontend Mentor | NFT preview card component</title>
@@ -22,35 +23,40 @@
 <body>
   <main>
     <div class="container">
-      <header class=""><img class="card__image" src="assets/images/image-equilibrium.jpg" alt="cube image">
-        <div ><img  src="/assets/images/icon-view.svg" alt="icon view" class="icon icon__view" ></div>
-      </header>
+      <a href="#" class="image-wrapper">
+        <img class="card__image" src="assets/images/image-equilibrium.jpg" alt="cube image"
+          aria-label="Go to NFT principal page">
+      </a>
+      <div>
+          <img  src="/assets/images/icon-view.svg" alt="" class="icon icon__view" aria-hidden="true">
+      </div>
+
       <div class="card card__info">
-        <h2 class="card__title">Equilibrium #3429</h2>
+        <h1 class="card__title"> <a href="#" class="card__text--bold">Equilibrium #3429</a></h1>
         <p class="text card__text">Our Equilibrium collection promotes balance and calm.</p>
         <p class="text card__text card__text--green">
           <span class="icon icon__ethereum">
-            <img src="assets/images/icon-ethereum.svg"alt="">
-          </span> 
+            <img src="assets/images/icon-ethereum.svg" alt="" aria-hidden="true">
+          </span>
           0.041 ETH
         </p>
         <p class="card__text card__text--time">
           <span class="icon icon__clock">
-            <img src="assets/images/icon-clock.svg"
-              alt="Clock Icon">
-            </span>
-            3 days left
-          </p>
-          <hr class="card__separator">
-          <footer> 
-            <div class="card__user">
-              <img class="user__img" src="assets/images/image-avatar.png" alt="User Image">
-              <p class="text card__text card__text--bottom">Creation of <span class="text card__text--bold">Jules Wyvern</span></p>
-            </div>
-          </footer>
+            <img src="assets/images/icon-clock.svg" alt="">
+          </span>
+          3 days left
+        </p>
+
+        <footer>
+          <div class="card__user">
+            <img class="user__img" src="/assets/images/image-avatar.png" alt="User Image" aria-hidden="true">
+            <p class="text card__text card__text--bottom">Creation of <a href="#" class="text card__text--bold">Jules
+                Wyvern</a></p>
+          </div>
+        </footer>
       </div>
     </div>
   </main>
 </body>
 
-</html> 
+</html>

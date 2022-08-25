@@ -13,7 +13,7 @@ body {
 .container {
     position: relative;
     width: 350px;
-    height: 610px;
+    height: 590px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -23,25 +23,34 @@ body {
     background-color: hsl(216, 50%, 16%);
 }
 
-/* This is the image, I want to make looks like in "active.states.jpg" but if I use a background color the image is over it.  */
+/* When I use z-index 10 on the wrapper the eye icon shows */
+
+.image-wrapper {
+    position: relative;
+    background-color: hsl(178, 100%, 50%);
+    overflow: hidden;
+    border-radius: 1rem;
+    z-index: 10;
+}
+
 
 .card__image {
     display: block;
-    width: 350px;
-    height: 350px;
+    max-width: 100%;
     padding: 1.5rem;
+    transition: opacity 300ms ease-in-out;
     border-radius: 2rem;
 }
 
-/* This is the "eye" icon. I used display:none and then my plan was use Hover to watch it again but it did not work.  */
+.image-wrapper:is(:hover) .card__image {
+    opacity: 0.5;
+}
 
 .icon__view {
     position: absolute;
     top: 150px;
     right: 150px;
-    display: none;
 }
-
 
 .card {
     margin: 0 1.5rem;
@@ -73,12 +82,9 @@ body {
     font-weight: 400;
 }
 
-.card__separator {
-    border-color: hsl(215, 51%, 70%);
-}
-
 .card__user{
     padding: 0.5rem;
+    border-top: 1px solid hsl(215, 51%, 70%);
 }
 
 .user__img {
@@ -91,12 +97,13 @@ body {
 .card__text--bottom {
     position: absolute;
     font-size: 16px;
-    bottom: 15px;
+    bottom: 18px;
     right: 90px;
     }
 
 .card__text--bold {
     font-weight: 600;
+    text-decoration: none;
     color: white;
 }
 
